@@ -13,7 +13,7 @@ test_sound_abspath = bld.path.get_bld().make_node(test_sound_target)
 test_sound_abspath = str(test_sound_abspath).replace('\\', '\\\\')
 
 b = bld(name='create_tests_source',
-    rule='python ${SRC} ${TGT}',
+    rule='python3 ${SRC} ${TGT}',
     source='create_tests_source.py',
     target=test_sound_target)
 # use post() to create the task, keep a reference to it

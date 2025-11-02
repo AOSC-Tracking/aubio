@@ -39,7 +39,7 @@ function fetchwaf () {
 function buildwaf () {
   tar xf $WAFTARBALL
   pushd waf-$WAFVERSION
-  NOCLIMB=1 python waf-light --tools=c_emscripten $*
+  NOCLIMB=1 python3 waf-light --tools=c_emscripten $*
   popd
 }
 

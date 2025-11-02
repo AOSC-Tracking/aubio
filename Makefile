@@ -9,7 +9,7 @@
 # $ make install
 # $ make test_python
 
-WAFCMD=python waf
+WAFCMD=python3 waf
 
 #WAFOPTS:=
 # turn on verbose mode
